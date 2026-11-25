@@ -1,0 +1,214 @@
+:root {
+  --BackgroundColor: #0a0a0a;
+  --FontColor: #ffffff;
+
+  --container-width: 1200px;
+  --container-padding: 24px;
+  --section-spacing: 48px;
+
+  --accent-color: #5555ff;
+}
+section {
+  scroll-margin-top: 30vh;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--BackgroundColor);
+  color: var(--FontColor);
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.fullName {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subText {
+  font-size: 16px;
+  max-width: 600px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+nav a {
+  font-family: "geist", "geist Fallback";
+}
+
+.mode-change-btn {
+  position: fixed;
+  top: 3%;
+  right: 2%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+}
+.mode-change-btn img {
+  position: fixed;
+  top: 3%;
+  right: 2%;
+  width: 30px;
+  height: 30px;
+}
+
+#transactionToAboutMe {
+  margin-top: 180px;
+}
+.aboutme {
+  margin-top: var(--section-spacing);
+}
+
+.aboutme p {
+  margin-bottom: 20px;
+}
+
+#products {
+  margin-top: var(--section-spacing);
+  margin-bottom: 100px;
+}
+
+#products h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-bottom: 40px;
+}
+
+.product {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.product img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.productInfo {
+  flex: 1;
+  min-width: 0;
+  font-size: 18px;
+}
+
+.productInfo h3 {
+  margin-bottom: 16px;
+}
+
+.shotIntro {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.technologiesUsed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.technologiesUsed p {
+  width: fit-content;
+  border: 2px solid var(--accent-color);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 14px;
+}
+
+#Tech-Stack h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-bottom: 40px;
+}
+
+.lang {
+  display: flex;
+}
+
+.client {
+  display: flex;
+}
+
+.client .title {
+  margin-right: 10px;
+}
+
+.server {
+  display: flex;
+}
+
+.server .title {
+  margin-right: 10px;
+}
+
+.tools {
+  display: flex;
+}
+
+.tools .title {
+  margin-right: 20px;
+}
+
+.technologies {
+  width: fit-content;
+  border: 2px solid var(--accent-color);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 14px;
+  margin: 0px 10px;
+}
+
+#Tech-Stack {
+  margin-bottom: 10%;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 16px;
+    --section-spacing: 32px;
+  }
+
+  .fullName {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  .product {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .product img {
+    width: 100%;
+  }
+
+  .productInfo {
+    width: 100%;
+  }
+}
